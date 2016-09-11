@@ -7,15 +7,12 @@
 
 # Site settings
 title: Light Worlds
-#email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-   light cybermancy
+email: SaltostiExternal@gmail.com
+description: Programmatic Light
 baseurl: "" # the subpath of your site, e.g. /blog
-#url: "http://yourdomain.com" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
+url: "http://salvatoretosti.github.io/" # the base hostname & protocol for your site
+twitter_username: LightWorlds_
 github_username:  SalvatoreTosti
-gems:
-  - jemoji
 
 # Build settings
 markdown: kramdown
