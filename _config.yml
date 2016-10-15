@@ -13,6 +13,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://salvatoretosti.github.io/" # the base hostname & protocol for your site
 twitter_username: LightWorlds_
 github_username:  SalvatoreTosti
+gems:
+  - jemoji
 
 # Build settings
 markdown: kramdown
