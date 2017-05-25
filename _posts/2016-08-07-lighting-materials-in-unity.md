@@ -8,7 +8,7 @@ categories: ["Unity"]
 I recently ran into strange lighting behavior in Unity 5.3.3.  
 Some objects in my scene appeared to be more strongly lit as they approached the edge of the camera's view.
 
-![lighting before](/assets/post_images/2016-08-07-lighting-materials-in-unity/house_before.png)
+![lighting before](/assets/post_images/2016-08-07-lighting-materials-in-unity/house_before.png){: .img }
 
 The camera was orthographic and the materials on the objects were simple _(just a base color and highlight color)._ Adjusting the light's configuration and fiddling with the global lighting settings seemed to yield no discernible results.
 
@@ -17,13 +17,13 @@ The answer explained that Unity 5+'s standard shader uses Fresnel reflection and
 
 Following the answer's suggestion, I changed the material to use a Legacy / Diffuse shader.
 
-![select legacy lighting](/assets/post_images/2016-08-07-lighting-materials-in-unity/house_lighting_select_legacy.png)
+![select legacy lighting](/assets/post_images/2016-08-07-lighting-materials-in-unity/house_lighting_select_legacy.png){: .img }
 
 This changed the specularity of the material and resolved the issue.
 
-![lighting after](/assets/post_images/2016-08-07-lighting-materials-in-unity/house_after.png)
+![lighting after](/assets/post_images/2016-08-07-lighting-materials-in-unity/house_after.png){: .img }
 
 Because the material changed how light was reflected, it also changed the 'normal' behavior of the material.  
 Here's an image which shows the change in specularity on a house which was not affected by the large specularity jump.
 
-![lighting comparison](/assets/post_images/2016-08-07-lighting-materials-in-unity/house_comparison.gif)
+![lighting comparison](/assets/post_images/2016-08-07-lighting-materials-in-unity/house_comparison.gif){: .img }

@@ -13,39 +13,40 @@ I wanted to export a single prefab which had a single dependent script.
 To achieve this, I used the following technique:
 
 __Step 1:__
-  Start by locating the assets you want to export.
+  Start by locating the assets you want to export.  
   My example is a prefab with one script attached.
+  ![script on prefab](/assets/post_images/2016-09-12-exporting-in-unity/script-on-prefab.png){: .img }
 
-  ![script on prefab](/assets/post_images/2016-09-12-exporting-in-unity/script-on-prefab.png)
 
 
-  ![prefab](/assets/post_images/2016-09-12-exporting-in-unity/prefab.png)
+
+  ![prefab](/assets/post_images/2016-09-12-exporting-in-unity/prefab.png){: .img }
 
 __Step 2:__
   Right-click the asset you're exporting, then click _Select Dependencies_ from the contextual menu.
 
-![select dependencies](/assets/post_images/2016-09-12-exporting-in-unity/select-dependencies.png)
+![select dependencies](/assets/post_images/2016-09-12-exporting-in-unity/select-dependencies.png){: .img }
 
   This should select all dependencies for the asset.
 
-![after select dependencies](/assets/post_images/2016-09-12-exporting-in-unity/after-select-dependencies.png)
+![after select dependencies](/assets/post_images/2016-09-12-exporting-in-unity/after-select-dependencies.png){: .img }
 
 
 __Step 3:__
   Select the asset and all of its dependencies, then right-click and select _Export Package_.
 
-![export package](/assets/post_images/2016-09-12-exporting-in-unity/export-package.png)
+![export package](/assets/post_images/2016-09-12-exporting-in-unity/export-package.png){: .img }
 
   This will open a small "export" window listing all items which will be exported.
   Initially, it will show the asset you're are exporting as well as __All Available__ scripts.
 
-![after export package](/assets/post_images/2016-09-12-exporting-in-unity/after-export-package.png)  
+![after export package](/assets/post_images/2016-09-12-exporting-in-unity/after-export-package.png){: .img }  
 
 __Step 4:__
   Untick the _Include dependencies_ box at the bottom of the export window.
   This will reduce the selection to only the items you have selected in your scene (the original asset and all of its dependencies).
 
-![after box untick](/assets/post_images/2016-09-12-exporting-in-unity/after-box-untick.png)  
+![after box untick](/assets/post_images/2016-09-12-exporting-in-unity/after-box-untick.png){: .img }  
 
 __Step 5:__
   Click the _Export_ button in the lower right-hand corner and select where the package should be saved.
