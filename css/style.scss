@@ -22,6 +22,8 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$light-gray: #aaa;
+
 // Width of the content area
 $content-width:    800px;
 
@@ -156,8 +158,13 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: #aaa !important;
+    color: $light-gray !important;
     text-decoration: none;
+	
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 
     &:visited {
         color: darken($brand-color, 15%);
@@ -165,20 +172,34 @@ a {
 
     &:hover {
         color: black !important;
-        border-bottom: 1px dotted black ;
+        //border-bottom: 1px dotted black ;
+		text-shadow: 0px 2px 2px gray;
+		
     }
 
     &.page-link{
+			//background: blue ;
+	       -moz-transition: all .2s ease-in;
+	       -o-transition: all .2s ease-in;
+	       -webkit-transition: all .2s ease-in;
+	       transition: all .2s ease-in;
+	       color: black; 
+	       //padding: 20px;
       &:hover {
-          color: $text-color;
-          border-bottom: 1px dotted black ;
+		  //color: red ;
+          //color: $text-color;
+	      //box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		  
+          //border-bottom: 1px dotted black ;
       }
     }
     &.postLink{
-      color: black !important;
-      &:hover {
-
-          border-bottom: 1px dotted black ;
+      //color: black !important;
+       color: $light-gray !important;
+	  &:hover {
+          //border-bottom: 1px dotted black ;
+		  color: black !important;
+		  text-shadow: 0px 2px 2px gray;
       }
 
       &:visited {
@@ -186,11 +207,14 @@ a {
       }
     }
     &.post-title-link{
-      color: black !important;
+	  color: $light-gray !important;
+	  overflow: hidden;
+	  white-space: nowrap;
+	  
       &:hover {
-
-          border-bottom: 1px dotted black !important ;
-      }
+		  color: black !important;
+		  text-shadow: 0px 2px 2px gray;
+	      }      
 
       &:visited {
           color: "crimson" !important;
@@ -382,18 +406,32 @@ pre {
   position: relative;
 }
 .site-title {
+  color: $light-gray;
   font-size: 64px;
   font-weight: 100;
   font-family: 'PT Sans';
   text-transform: capitalize;
   font-weight: 500;
   margin-top: 1em;
+  
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  
   &,
   &:visited {
-    color: $grey-color-dark;
+    //color: $grey-color-dark;
+  }
+  &:hover {
+      color: black !important;
+      //border-bottom: 1px dotted black ;
+	text-shadow: 0px 2px 2px gray;
+	
   }
 }
 .site-description {
+  color: $light-gray;
   font-size: 14px;
   letter-spacing: 2px;
   text-indent: 6px;
@@ -404,7 +442,7 @@ pre {
   padding-right: 2em;
 }
 .site-navigation {
-  color: #aaa;
+  color: $light-gray;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px;
@@ -428,7 +466,7 @@ pre {
   text-transform: lowercase;
 }
 .page-link {
-  color: rgb(170, 170, 170);
+    color: rgb(170, 170, 170);
 }
 .site-nav {
   .page-link {
