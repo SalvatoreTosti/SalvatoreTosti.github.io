@@ -20,7 +20,10 @@ $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
+$grey-color-light-mid: lighten($grey-color, 20%);
 $grey-color-dark:  darken($grey-color, 25%);
+$grey-color-mid: lighten($grey-color-dark, 30%);
+
 
 $light-gray: #aaa;
 
@@ -171,9 +174,9 @@ a {
     }
 
     &:hover {
-        color: black !important;
+        color: $grey-color !important;
         //border-bottom: 1px dotted black ;
-		text-shadow: 0px 2px 2px gray;
+		text-shadow: 0px 2px 2px $grey-color-mid;
 		
     }
 
@@ -198,8 +201,8 @@ a {
        color: $light-gray !important;
 	  &:hover {
           //border-bottom: 1px dotted black ;
-		  color: black !important;
-		  text-shadow: 0px 2px 2px gray;
+		  color: $grey-color !important;
+		  text-shadow: 0px 2px 2px $grey-color-mid;
       }
 
       &:visited {
@@ -212,8 +215,8 @@ a {
 	  white-space: nowrap;
 	  
       &:hover {
-		  color: black !important;
-		  text-shadow: 0px 2px 2px gray;
+		  color: $grey-color !important;
+		  text-shadow: 0px 2px 2px $grey-color-mid;
 	      }      
 
       &:visited {
@@ -424,9 +427,9 @@ pre {
     //color: $grey-color-dark;
   }
   &:hover {
-      color: black !important;
+      color: $grey-color-mid !important;
       //border-bottom: 1px dotted black ;
-	text-shadow: 0px 2px 2px gray;
+	text-shadow: 0px 3px 3px $grey-color-light;
 	
   }
 }
